@@ -5,18 +5,23 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<title>Business School</title>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet"> 
 	<!-- <link rel="stylesheet" href="./css/milligram.css"> -->
 	<link rel="stylesheet" href="./css/bulma.css">
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-	<nav class="navbar">
+	<nav class="navbar is-medium">
 		<div class="container">
 			<div class="navbar-brand">
-				<a href="index.html" class="navbar-item">
-					<img src="./img/logo.svg" alt="Logo" class="navbar-logo">
-				</a>
-				<a class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="toggle">
+				<div class="overlay"></div>
+				<div class="navbar-item brand">
+					<a href="index.html" class="brand__item">
+						<img src="./img/logo.svg" alt="Logo" class="navbar-logo">
+					</a>
+				</div>
+				
+				<a class="navbar-burger burger" role="button" aria-label="overlay" aria-expanded="false" data-target="toggle">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
@@ -28,7 +33,7 @@
 					<a href="#cursos" class="navbar-item">Cursos</a>
 					<a href="#programas" class="navbar-item">Programas</a>
 					<a href="#contacto" class="navbar-item">Contacto</a>
-					<div class="level">
+					<div class="level is-mobile">
 						<div class="level-item"><span class="icon"><i class="fab fa-facebook-f"></i></span></div>
 						<div class="level-item"><span class="icon"><i class="fab fa-instagram"></i></span></div>
 						<div class="level-item"><span class="icon"><i class="fab fa-youtube"></i></span></div>
@@ -39,46 +44,69 @@
 		</div>
 	</nav>
 
-	<section class="hero is-large">
+	<section class="hero is-medium intro">
 		<div class="hero-body">
+			<!-- <div class="diag-inner"></div> -->
+			
+			<div class="diag"></div>
+			<div class="diag2"></div>
+			<div class="square1-2"></div>
+			<div class="square2-2"></div>
+			<div class="diag-line"></div>
 			<div class="container">
-				<h1 class="title">
-					TRABAJAMOS CON EMPRESAS PARA BRINDAR PROGRAMAS DE EMPRENDIMIENTO
-				</h1>
-				<div class="buttons are-medium">
-					<a href="" class="button">PROGRAMA</a>
-					<a href="" class="button">DIRECTO</a>
-				</div>
-				<div class="field has-addons">
-					<div class="control">
-						<input type="text" class="input" placeholder="Escribe tu pregunta">
-					</div>
-					<div class="control">
-						<a href="" class="button is-primary">
-							<span class="icon">
-								<i class="fas fa-search"></i>
-							</span>
-							<span>CONSULTA</span>
-						</a>
+				<div class="columns ">
+					<div class="column is-7-mobile is-5">
+						<h1 class="title has-text-white is-responsive">
+							TRABAJAMOS CON EMPRESAS PARA BRINDAR PROGRAMAS DE EMPRENDIMIENTO
+						</h1>
 					</div>
 				</div>
+				<div class="columns ">
+					<div class="column is-5-tablet is-4">
+						<div class="buttons are-medium">
+							<a href="" class="button is-primary">PROGRAMA</a>
+							<a href="" class="button is-white is-outlined">DIRECTO</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="columns is-centered is-hidden-touch">
+					<div class="column is-6">
+						<div class="field has-addons">
+							<div class="control query">
+								<input type="text" class="input has-text-centered" placeholder="Escribe tu pregunta">
+							</div>
+							<div class="control ">
+								<a href="" class="button is-primary">
+									<span class="icon">
+										<i class="fas fa-search"></i>
+									</span>
+									<span>CONSULTA</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section courses">
 		<div class="container">
 			<div class="columns">
-				<div class="column">
+				<div class="column is-4 is-offset-1">
 					<h2 class="title">CURSOS ONLINE</h2>
-					<p class="is-bold">Brindamos la oportunidad de unirte a la red de cursos gratis y pagos para emprendedores.</p>
+					<p><strong>Brindamos la oportunidad de unirte a la red de cursos gratis y pagos para emprendedores.</strong></p>
 					<hr>
-					<p>Los mejores programas para descubrir las mejores herramientas para poder proyectar las ideas de negocio. Todo en una base de datos única en el mercado.</p>
-					<a href="" class="button">PROGRAMAS</a>
+					<p class="has-text-justified">Los mejores programas para descubrir las mejores herramientas para poder proyectar las ideas de negocio. Todo en una base de datos única en el mercado.</p>
+					<a href="" class="button is-black">PROGRAMAS</a>
 				</div>
-				<div class="column">
+				<div class="column is-5 is-offset-1 video">
 					<!-- VIDEO -->
-					<div class="video">
+					<div>
+						<div class="video-triangle1"></div>
+						<div class="video-triangle2"></div>
 						<video src="./img/video.mp4"  controls>Tu navegador no admite el elemento <code>video</code>.
 						</video>
 
@@ -88,20 +116,22 @@
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section programs">
+		<div class="diag"></div>
+		<div class="diag-line"></div>
 		<div class="container">
 			<div class="columns">
-				<div class="column">
+				<div class="column is-5 is-offset-1 is-7-mobile">
 					<h2 class="title">PROGRAMAS</h2>
-					<h3 class="subtitle">NUESTROS MEJORES PROGRAMAS PARA EMPRENDEDORES</h3>
+					<p><strong>NUESTROS MEJORES PROGRAMAS PARA EMPRENDEDORES</strong></p>
 				</div>
-				<div class="column">
-					<a href="" class="button">CONTACTO</a>
+				<div class="column is-4  button-container">
+					<a href="" class="button is-primary ">CONTACTO</a>
 				</div>
 			</div>
 
 			<div class="columns">
-				<div class="column is-one-third">
+				<div class="column is-3 is-offset-1">
 					<div class="card">
 						<div class="card-image">
 							<figure class="image is-4by3"><img src="./img/card1.jpg" alt="card 1"></figure>
@@ -111,7 +141,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-one-third">
+				<div class="column is-3">
 					<div class="card">
 						<div class="card-image">
 							<figure class="image is-4by3"><img src="./img/card2.jpg" alt="card 2"></figure>
@@ -121,7 +151,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-one-third">
+				<div class="column is-3">
 					<div class="card">
 						<div class="card-image">
 							<figure class="image is-4by3"><img src="./img/card3.jpg" alt="card 3"></figure>
@@ -131,19 +161,29 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="column is-1 programs__icon-container">
+					<span class="arrow-right icon"><i class='fas fa-caret-right'></i></span>
+					<span class="arrow-left icon"><i class='fas fa-caret-left'></i></span>
+
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section contact">
+		<div class="diag"></div>
+		<div class="diag-line"></div>
 		<div class="container">
 			<div class="columns">
-				<div class="column is-one-third">
+				<div class="column is-4-desktop is-hidden-touch">
 					<div class="div info-brand">
-						<figure><img src="./img/logo.svg" alt="Logo"></figure>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga sunt sapiente veniam fugiat harum itaque corporis velit dolorem, aliquam, obcaecati recusandae voluptatem vero odio.</p>
-						<div class="level">
-							<div class="level-left">
+						<figure class="is-white"><img src="./img/logo-white.svg" alt="Logo"></figure>
+						<div class="content is-small">
+							<p class="has-text-white has-text-justified is-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga sunt sapiente veniam fugiat harum itaque corporis velit dolorem, aliquam, obcaecati recusandae voluptatem vero odio.</p>
+						</div>
+						<div class="level is-mobile">
+							<div class="level-left has-text-white">
 								<div class="level-item"><span class="icon"><i class="fab fa-facebook-f"></i></span></div>
 								<div class="level-item"><span class="icon"><i class="fab fa-instagram"></i></span></div>
 								<div class="level-item"><span class="icon"><i class="fab fa-youtube"></i></span></div>
@@ -151,11 +191,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-one-third">
-					<div class="box">
-						<div class="content">
-							<h2 class="title">CONTACTO</h2>
-							<div class="level">
+				<div class="column is-4-desktop is-6-tablet">
+					<div class="box is-dark contact-box">
+						<div class=" has-text-white">
+							<h2 class="title has-text-white">CONTACTO</h2>
+							<div class="level is-mobile">
 								<div class="level-left">
 									<div class="level-item">
 										<span class="icon">
@@ -167,7 +207,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="level">
+							<div class="level is-mobile">
 								<div class="level-left">
 									<div class="level-item">
 										<span class="icon">
@@ -179,8 +219,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="level">
-								<div class="level-left">
+							<div class="level is-mobile">
+								<div class="level-left is-mobile">
 									<div class="level-item">
 										<span class="icon">
 											<i class="fas fa-mail-bulk"></i>
@@ -194,20 +234,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-one-third">
+				<div class="column is-4-desktop is-6-tablet">
 					<form action="">
 						<h3 class="title">DANOS TUS DATOS</h3>	
 						<div class="field">
-							<div class="control"><input class="input" type="text" placeholder="NOMBRE Y APELLIDO"></div>
+							<div class="control bar-left"><input class="input" type="text" placeholder="NOMBRE Y APELLIDO"></div>
 						</div>
 						<div class="field">
-							<div class="control"><input class="input" type="text" placeholder="DIRECCIÓN"></div>
+							<div class="control bar-left"><input class="input" type="text" placeholder="DIRECCIÓN"></div>
 						</div>
 						<div class="field">
-							<div class="control"><input class="input" type="email" placeholder="CORREO ELECTRÓNICO"></div>
+							<div class="control bar-left"><input class="input" type="email" placeholder="CORREO ELECTRÓNICO"></div>
 						</div>
 						<div class="field">
-							<div class="control"><input class="input" type="text" placeholder="TELÉFONO"></div>
+							<div class="control bar-left"><input class="input" type="text" placeholder="TELÉFONO"></div>
 						</div>
 						<div class="field">
 							<div class="control"><input type="button" class="button is-primary" value="ENVIAR"></div>
@@ -232,6 +272,8 @@
 			</div>
 		</div>
 	</footer>
+
+
 
 	<script src="./js/main.js"></script>
 </body>
